@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Robin | Portfolio</title>
+  <meta name="description" content="Kyle Robin: Digital & Computational Sciences and Psychology student at Bates College, AI research lead, and NCAA Division I skier." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="#home" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#athletics">Athletics</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-card reveal">
+        <!-- PHOTO: replace this div with <img src="images/profile.jpg" alt="Kyle Robin" class="hero-photo"> -->
+        <div class="hero-photo photo-slot">
+          <span>Profile photo<br><code>images/profile.jpg</code></span>
+        </div>
+        <h2 class="hero-name">Kyle Robin</h2>
+        <p class="hero-sub">Stowe, Vermont &rarr; Bates College</p>
+        <div class="socials">
+          <a href="mailto:krobin@bates.edu" aria-label="Email">Email</a>
+          <!-- TODO: paste your LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/krobin2005" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow reveal">Hi, I'm Kyle</p>
+        <h1 class="reveal">Computing<br><span class="accent">&amp; the Mind</span></h1>
+        <p class="lead reveal">
+          I'm a Digital &amp; Computational Sciences and Psychology double major at Bates College.
+          I build AI tools for neuroscience research, analyze markets, and race skis at the NCAA Division I level.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="Kyle_Robin_Resume.pdf" class="btn btn-ghost" target="_blank">Resume</a>
+        </div>
+
+        <!-- ============ STATS ============ -->
+        <div id="about" class="stats reveal">
+          <div class="stat">
+            <span class="stat-num">3.71</span>
+            <span class="stat-label">GPA as a D1 athlete</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Majors: DCS &amp; Psychology</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Countries raced in</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about">
+      <h2 class="section-title reveal">About <span class="muted">me</span></h2>
+      <div class="about-grid">
+        <p class="reveal">
+          I grew up in Stowe, Vermont, and spent most of my life chasing speed on snow. That
+          same drive to understand how things work, from how a ski carves to how the brain
+          interprets a smell, is what pulled me toward computer science and psychology.
+        </p>
+        <p class="reveal">
+          At Bates, I lead AI research in Professor Jason Castro's neuroscience lab, where we use
+          large language models to help map the sense of smell. I like problems that sit between
+          fields: code and cognition, data and decisions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Research Assistant, Lead of AI Research</h3>
+            <span class="job-date">Sep 2026 – Present</span>
+          </div>
+          <p class="job-org">Bates College · Neuroscience Lab (Prof. Jason Castro)</p>
+          <p>
+            Leading development of AI agent interfaces to map and objectify the biological sense of smell,
+            bridging human psychophysics and mouse neural networks. Building Python LLM workflows with the
+            Claude API and custom hooks to query large olfactory databases like Pyrfume efficiently.
+          </p>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Industrial Sector Analyst</h3>
+            <span class="job-date">Aug 2025 – Present</span>
+          </div>
+          <p class="job-org">Bates Investment Club</p>
+          <p>
+            Conduct equity research on industrial companies using DCF, comparable-company, and
+            fundamental analysis, then turn that work into stock pitches with my team.
+          </p>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Co-Lead Researcher &amp; Project Analyst</h3>
+            <span class="job-date">Jan – May 2024</span>
+          </div>
+          <p class="job-org">Burke Mountain Academy Energy Proposal</p>
+          <p>
+            Co-led a $1.6M solar feasibility study for campus, covering system sizing, project economics,
+            and federal and state clean-energy incentives.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="project-grid">
+
+        <article class="project reveal">
+          <!-- PHOTO: replace with <img src="images/olfaction.jpg" alt="..." class="project-img"> -->
+          <div class="project-img photo-slot"><span>Project image</span></div>
+          <div class="project-body">
+            <span class="tag">AI · Neuroscience</span>
+            <h3>Digital Olfaction Agent</h3>
+            <p>
+              LLM-powered agent that queries external olfactory datasets to connect how humans
+              perceive smells with how mouse neural networks encode them. Working toward a
+              co-authored publication this semester.
+            </p>
+            <ul class="stack"><li>Python</li><li>Claude API</li><li>Pyrfume</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-img photo-slot"><span>Project image</span></div>
+          <div class="project-body">
+            <span class="tag">Energy · Analysis</span>
+            <h3>BMA Solar Feasibility Study</h3>
+            <p>
+              Evaluated a $1.6M solar array to offset 248,000+ kWh of annual campus use. Mapped
+              IRA Elective Pay, ITC, and PTC incentives and proposed using live production data in
+              science classes.
+            </p>
+            <ul class="stack"><li>Excel</li><li>Financial modeling</li><li>Research</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-img photo-slot"><span>Project image</span></div>
+          <div class="project-body">
+            <span class="tag">Finance</span>
+            <h3>Industrial Equity Pitches</h3>
+            <p>
+              Built discounted cash flow and comparable-company models to develop investment
+              theses on industrial stocks, then presented pitches to the Bates Investment Club.
+            </p>
+            <ul class="stack"><li>DCF</li><li>Comps</li><li>Excel</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-img photo-slot"><span>Project image</span></div>
+          <div class="project-body">
+            <span class="tag">Web · DCS340</span>
+            <h3>This Portfolio</h3>
+            <p>
+              A hand-coded, responsive personal site built for DCS340 with HTML, CSS, and
+              vanilla JavaScript.
+            </p>
+            <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ LEARNING: DCS340 OPTIMIZATION MODULE ============ -->
+    <section id="learning" class="section">
+      <h2 class="section-title reveal">Learning <span class="muted">log</span></h2>
+      <p class="lead section-lead reveal">
+        My explorations from DCS340's Introduction to Classical Methods in Optimization module:
+        finding peaks and valleys with code, one method at a time.
+      </p>
+
+      <div class="learn-list">
+
+        <article class="learn reveal">
+          <div class="learn-num">01</div>
+          <div class="learn-body">
+            <span class="tag">1D Optimization · Sep 16, 2026</span>
+            <h3>The Pumpkin Problem: Bisection vs. Newton's Method</h3>
+            <p>
+              Modeled a launched pumpkin's path as <code>f(x) = 4 − (x − 2)²</code> and found its peak two ways.
+              Bisection repeatedly halves an interval until the derivative's sign change is pinned down;
+              Newton's method uses the first and second derivatives to jump straight to it.
+            </p>
+            <blockquote>
+              "It reminded me heavily of merge sort. Optimization accuracy depends not only on the
+              formula, but also on the method's assumptions and the quality of the initial guess."
+            </blockquote>
+            <div class="learn-links">
+              <a href="https://colab.research.google.com/drive/10jddf17AM2lgzsNNgvP4LW-mAMGqrYaT" target="_blank" rel="noopener">Open in Colab &nearr;</a>
+              <a href="https://github.com/krobin2005/myportfolio/blob/main/dcs340/optimization_method_experimentation___homework_dcs340___sep_16%2C_2026.py" target="_blank" rel="noopener">View code &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="learn reveal">
+          <div class="learn-num">02</div>
+          <div class="learn-body">
+            <span class="tag">2D Optimization</span>
+            <h3>Finding the Bottom of the Bowl</h3>
+            <p>
+              Moved up a dimension to the surface <code>f(x, y) = (x − 2)² − xy + (y − 3)²</code>.
+              Visualized it as a 3D surface and contour "topo map," then compared three routes to the minimum:
+              SciPy's Nelder–Mead, Newton's method with a hand-derived gradient and Hessian, and my own
+              gradient descent loop.
+            </p>
+            <div class="learn-links">
+              <a href="https://colab.research.google.com/drive/1o597lC-NzXaAF8ApLlbyZZMIe9TR8D48" target="_blank" rel="noopener">Open in Colab &nearr;</a>
+              <a href="https://github.com/krobin2005/myportfolio/blob/main/dcs340/2d_input_(3d_objects)_opptimization_intro.py" target="_blank" rel="noopener">View code &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="learn learn-with-img reveal">
+          <div class="learn-num">03</div>
+          <div class="learn-body">
+            <span class="tag">3D Visualization</span>
+            <h3>Building a Torus</h3>
+            <p>
+              Practiced parametric surfaces by generating a torus from two angles with NumPy and
+              rendering it in Matplotlib. It was a warm-up for thinking about shapes in three dimensions.
+            </p>
+            <div class="learn-links">
+              <a href="https://github.com/krobin2005/myportfolio/blob/main/dcs340/torus.py" target="_blank" rel="noopener">View code &nearr;</a>
+            </div>
+          </div>
+          <img src="dcs340/torus.png" alt="3D torus rendered in Matplotlib with a viridis color map" class="learn-img" loading="lazy" />
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ATHLETICS ============ -->
+    <section id="athletics" class="section athletics">
+      <div class="athletics-text">
+        <h2 class="section-title reveal">On the <span class="accent">snow</span></h2>
+        <div class="job reveal">
+          <div class="job-head">
+            <h3>NCAA Division I Skiing</h3>
+            <span class="job-date">Aug 2025 – Present</span>
+          </div>
+          <p class="job-org">Bates College</p>
+          <p>30+ hours a week of training and competition alongside 20 teammates, while carrying a double major.</p>
+        </div>
+        <div class="job reveal">
+          <div class="job-head">
+            <h3>Internationally Competitive Ski Racer</h3>
+            <span class="job-date">May 2024 – Apr 2025</span>
+          </div>
+          <p class="job-org">BMA E-Team · Sponsored Athlete</p>
+          <p>
+            Raced FIS, National Championship, and Continental Cup events across the U.S., Canada,
+            Austria, Italy, and Slovenia. Earned FIS wins, podiums, and top-10 finishes at Nationals.
+          </p>
+        </div>
+      </div>
+      <!-- PHOTO: replace with <img src="images/racing.jpg" alt="Kyle racing" class="athletics-photo"> -->
+      <div class="athletics-photo photo-slot reveal"><span>Racing photo<br><code>images/racing.jpg</code></span></div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal">Skills &amp; <span class="muted">tools</span></h2>
+      <div class="skill-grid">
+        <div class="skill reveal"><h3>Programming</h3><p>Python, R, data structures &amp; algorithms</p></div>
+        <div class="skill reveal"><h3>Data &amp; AI</h3><p>Data science, LLM workflows, prompting with Claude, ChatGPT, Gemini, Codex</p></div>
+        <div class="skill reveal"><h3>Finance</h3><p>Financial accounting, DCF, comparable-company analysis</p></div>
+        <div class="skill reveal"><h3>Tools</h3><p>Excel, Word, PowerPoint</p></div>
+        <div class="skill reveal"><h3>Certification</h3><p>Anthropic AI Fluency</p></div>
+        <div class="skill reveal"><h3>Coursework</h3><p>CS Foundations, Data Structures, Data Science, Neuroscience, Psychology</p></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title reveal">Let's <span class="accent">talk</span></h2>
+      <p class="lead reveal">Open to research collaborations, internships, and conversations about AI, the brain, or skiing.</p>
+      <a class="contact-email reveal" href="mailto:krobin@bates.edu">krobin@bates.edu</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="#home">Back to top &uarr;</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
