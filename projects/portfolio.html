@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Portfolio | Kyle Robin</title>
+  <meta name="description" content="How Kyle Robin built his personal portfolio site for DCS340 with HTML, CSS, JavaScript, and GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">Web · DCS340</span>
+      <h1 class="reveal">This Portfolio</h1>
+      <p class="lead reveal">A hand-coded personal website built for DCS340, and my first time setting up a full workflow between code, GitHub, and an AI assistant.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Designer & developer</div>
+        <div><span>When</span>Sep 2026</div>
+        <div><span>Tools</span>HTML, CSS, JavaScript, GitHub Pages, Claude</div>
+      </div>
+
+      <img src="../images/site.jpg" alt="Screenshot of this portfolio website" class="pp-hero-img reveal" />
+
+      <section class="pp-section reveal">
+        <h2>Overview</h2>
+        <p>The first DCS340 project asked us to build a digital portfolio on GitHub that shows who we are as learners. I built this site from scratch without a website builder, so every part of it is code I can open and change.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>How it works</h2>
+        <ul class="pp-list">
+          <li><strong>HTML</strong> holds the content and structure of every page.</li>
+          <li><strong>CSS</strong> handles the dark theme, layout, and responsive design, so the site works on both laptops and phones.</li>
+          <li><strong>JavaScript</strong> runs the mobile menu, the fade-in animations as you scroll, and the nav highlight.</li>
+          <li><strong>GitHub Pages</strong> hosts the site straight from my repository, so every commit updates the live site.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>The process</h2>
+        <ul class="pp-list">
+          <li>Studied an example portfolio and planned the sections around my resume.</li>
+          <li>Used <strong>Claude</strong> as a coding assistant to draft the site, then edited the content to sound like me.</li>
+          <li>Created the repository, turned on GitHub Pages, and debugged the deployment.</li>
+          <li>Linked my optimization module work from Google Colab into the Learning Log.</li>
+          <li>Added photos and a separate page for each project.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>See the code</h2>
+        <p>Everything behind this site is public on GitHub.</p>
+        <div class="pp-cta">
+          <a href="https://github.com/krobin2005/myportfolio" class="btn btn-primary" target="_blank" rel="noopener">View the repo &nearr;</a>
+          <a href="../index.html#learning" class="btn btn-ghost">See my Learning Log</a>
+        </div>
+      </section>
+
+      <a href="olfaction.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>Digital Olfaction Agent</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

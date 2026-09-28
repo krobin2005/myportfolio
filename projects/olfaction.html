@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Olfaction Agent | Kyle Robin</title>
+  <meta name="description" content="Building LLM agents to map the biological sense of smell in Professor Jason Castro's lab at Bates College." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">AI · Neuroscience</span>
+      <h1 class="reveal">Digital Olfaction Agent</h1>
+      <p class="lead reveal">Using AI agents to help map and measure the sense of smell, connecting how people perceive odors with how mouse neural networks encode them.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Lead of AI Research</div>
+        <div><span>When</span>Sep 2026 – Present</div>
+        <div><span>Tools</span>Python, Claude API, Pyrfume</div>
+      </div>
+
+      <img src="../images/olfaction.jpg" alt="3D model of a molecular structure" class="pp-hero-img reveal" />
+
+      <section class="pp-section reveal">
+        <h2>The question</h2>
+        <p>Vision and hearing have well-established ways to measure what we sense, like wavelength and frequency. Smell doesn't have an equivalent. Professor Jason Castro's lab studies how to <strong>map and objectify</strong> the sense of smell by bridging two kinds of data: <strong>human psychophysics</strong> (how people describe and rate odors) and <strong>mouse neural networks</strong> (how the olfactory system encodes them).</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>What I'm doing</h2>
+        <ul class="pp-list">
+          <li>Leading development of AI agent interfaces that help the lab explore large olfactory datasets.</li>
+          <li>Engineering Python-based LLM workflows with the <strong>Claude API</strong> and custom hook functions.</li>
+          <li>Optimizing token usage so agents can securely and efficiently query large external databases like <strong>Pyrfume</strong>, an open collection of olfactory datasets.</li>
+          <li>Collaborating across the lab to analyze machine learning outputs.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>Where it's headed</h2>
+        <p>We're working toward a <strong>co-authored publication in digital olfaction</strong> by the end of the semester.</p>
+      </section>
+
+      <a href="solar.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>BMA Solar Feasibility Study</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
