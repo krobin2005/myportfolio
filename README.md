@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32588169/README.md)
 # Kyle Robin: Portfolio
 
 **Live site:** https://krobin2005.github.io/myportfolio/
@@ -11,7 +10,7 @@ The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitH
 
 - **About:** who I am and what pulls me between computing and the mind
 - **Experience:** AI research, the Bates Investment Club, and the BMA solar energy proposal
-- **Projects:** the Digital Olfaction Agent, the BMA Solar Feasibility Study, industrial equity pitches, and this site
+- **Projects:** the Digital Olfaction Agent, the BMA Solar Feasibility Study, industrial equity pitches, and this site. Each one opens its own page.
 - **Learning Log:** my work from the DCS340 optimization module, with links to the Colab notebooks and code
 - **Athletics:** D1 skiing at Bates and international FIS racing
 - **Skills and contact**
@@ -33,8 +32,9 @@ The Python files were exported from Google Colab. Each one lists its original no
 
 ```
 myportfolio/
-├── index.html     # page content and structure
-├── style.css      # layout, colors, and responsive design
+├── index.html     # home page content and structure
+├── projects/      # a separate page for each project
+├── style.css      # layout, colors, and responsive design (shared by every page)
 ├── script.js      # mobile menu, scroll animations, active nav link
 ├── images/        # photos used on the site
 └── dcs340/        # optimization module code and figures
