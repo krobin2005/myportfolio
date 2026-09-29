@@ -1,0 +1,13 @@
+>sequence 1
+xxxxxxxxxxxxxxxxxxxxxxTATAATxxxxx
+xxxxxGGGGGGGGGGGTACGACTATGATGAGAT
+GATCGGGGGG
+>sequence 2
+xxxxxxxxxxxxxxxxTATAATxxxxxxxxxxAAAAAAAAAAATACACCTATGAAACAGTTATTAAAAAA
+>sequence 3
+xxxxxxxxxxxTATAATxxxxxxxxxxCCCCCCCCCCCTACATACGAATAAAACGGTCATGCCGAACTCCCCCC
+>sequence 4
+xxxxxxxxxxxTATAATxxxxxxxxxxCCCCCCCCCCCTACGACGTTGACAAACGGTCATGCCGAACTCCCCCC
+>sequence 5
+xxxxxxxxxxxxxxxxxxxxxxTATAATxxxxxxxxxxGGGGGGGGGGGTACTCATATTCATCAATGATCGGGGGG
+                                                    
