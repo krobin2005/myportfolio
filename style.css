@@ -236,6 +236,13 @@ a.project:hover .project-more { transform: translateX(4px); }
 .pp-next span { color: var(--muted); font-size: .85rem; display: block; }
 .pp-next strong { font-family: var(--font-head); font-size: 1.35rem; }
 .pp-next .arrow { font-size: 1.6rem; color: var(--accent); }
+.pp-related { margin-top: 20px; }
+.pp-figure { margin: 28px 0 0; }
+.pp-figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border); background: #000; }
+.pp-figure figcaption { color: var(--muted); font-size: .92rem; margin-top: 10px; }
+.pp-section code {
+  font-size: .88em; background: var(--surface-2); padding: 2px 6px; border-radius: 6px; color: var(--text);
+}
 
 /* ---------- Scroll reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }

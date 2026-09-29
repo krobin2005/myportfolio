@@ -10,7 +10,7 @@ The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitH
 
 - **About:** who I am and what pulls me between computing and the mind
 - **Experience:** AI research, the Bates Investment Club, and the BMA solar energy proposal
-- **Projects:** the Digital Olfaction Agent, the BMA Solar Feasibility Study, industrial equity pitches, and this site. Each one opens its own page.
+- **Projects:** Scent to Art (a prize-winning hackathon project), the Digital Olfaction Agent, DNA transcription and translation, the BMA Solar Feasibility Study, industrial equity pitches, and this site. Each one opens its own page.
 - **Learning Log:** my work from the DCS340 optimization module, with links to the Colab notebooks and code
 - **Athletics:** D1 skiing at Bates and international FIS racing
 - **Skills and contact**
@@ -37,7 +37,9 @@ myportfolio/
 ├── style.css      # layout, colors, and responsive design (shared by every page)
 ├── script.js      # mobile menu, scroll animations, active nav link
 ├── images/        # photos used on the site
-└── dcs340/        # optimization module code and figures
+├── scent-to-art/  # Bowdoin–Bates–Colby Hackathon project
+├── dcs109/        # DNA transcription & translation final project
+└── dcs340/        # optimization module code and notebooks
 ```
 
 ## Running it locally
