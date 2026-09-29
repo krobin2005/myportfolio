@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNA Transcription & Translation | Kyle Robin</title>
+  <meta name="description" content="A Python program that transcribes DNA into mRNA, translates it into protein, and finds mutations, applied to E. coli GyrA sequences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">Bioinformatics · DCS109</span>
+      <h1 class="reveal">DNA Transcription & Translation</h1>
+      <p class="lead reveal">My DCS109 final project: a program that follows DNA through transcription and translation, then pinpoints exactly where mutated proteins differ from the original.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Programmer</div>
+        <div><span>When</span>DCS109 final project</div>
+        <div><span>Tools</span>Python</div>
+      </div>
+
+      <img src="../images/dna.png" alt="Protein alignment showing single amino acid changes at positions 57 and 61" class="pp-hero-img reveal" />
+        <div class="stats pp-stats">
+          <div class="stat">
+            <span class="stat-num">10</span>
+            <span class="stat-label">Mutant sequences analyzed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">187</span>
+            <span class="stat-label">Amino acids translated per sequence</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Mutation hotspots found</span>
+          </div>
+        </div>
+      <section class="pp-section reveal">
+        <h2>How it works</h2>
+        <ul class="pp-list">
+          <li><strong>Read the data:</strong> parses DNA sequences from a FASTA file.</li>
+          <li><strong>Find the promoter:</strong> locates the <code>TATAAT</code> promoter box that signals where transcription begins.</li>
+          <li><strong>Transcribe:</strong> starting 16 bases after the promoter, pairs each template-strand base with its mRNA partner (A→U, T→A, C→G, G→C).</li>
+          <li><strong>Translate:</strong> finds the <code>AUG</code> start codon and reads codon by codon into amino acids until it hits a stop codon.</li>
+          <li><strong>Find mutations:</strong> compares each protein to the wild type and marks every position that differs.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>What it found</h2>
+        <p>I ran the program on sequences from the <strong>quinolone resistance-determining region (QRDR)</strong> of E. coli <strong>GyrA</strong>, the gene for the A subunit of DNA gyrase. Each of the 10 spontaneous and induced mutants had exactly one amino-acid change: <strong>S→L at position 57</strong> in seven samples, and <strong>D→N or D→G at position 61</strong> in three. In the full-length protein, those positions line up with <strong>Ser83 and Asp87</strong>, the best-known mutation hotspots for fluoroquinolone antibiotic resistance.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>Testing</h2>
+        <p>Every function has test cases that compare its output against the expected answer, from finding a promoter in a toy sequence to translating <code>AUGGCUACCGAA</code> into <code>ATE</code>.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>See the code</h2>
+        <div class="pp-cta">
+          <a href="https://github.com/krobin2005/myportfolio/tree/main/dcs109" class="btn btn-primary" target="_blank" rel="noopener">View the code &nearr;</a>
+        </div>
+      </section>
+
+      <a href="solar.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>BMA Solar Feasibility Study</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scent to Art | Kyle Robin</title>
+  <meta name="description" content="A multi-agent Claude pipeline that predicts how changing a molecule's structure changes its smell, built at the Bowdoin–Bates–Colby Hackathon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">Hackathon · AI · Prize winner</span>
+      <h1 class="reveal">Scent to Art</h1>
+      <p class="lead reveal">A team of AI agents that imagines how tweaking a molecule would change its smell, then turns the result into art. Built at the Bowdoin–Bates–Colby Hackathon, where it won prizes.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Builder & presenter</div>
+        <div><span>When</span>Sep 2026</div>
+        <div><span>Tools</span>Python, Claude API, Pyrfume, pandas, Matplotlib</div>
+      </div>
+
+      <img src="../images/scent.jpg" alt="A Scent Neural Map: a glowing radial diagram of odor descriptors" class="pp-hero-img reveal" />
+        <div class="stats pp-stats">
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Colleges competing</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">~100</span>
+            <span class="stat-label">People at the final presentation</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">AI agents working together</span>
+          </div>
+        </div>
+      <section class="pp-section reveal">
+        <h2>The idea</h2>
+        <p>Pyrfume's Leffingwell dataset labels molecules with the words people use to describe their smell, like <strong>fruity</strong>, <strong>garlic</strong>, or <strong>caramellic</strong>. I wanted to flip the question around: if you changed a molecule's structure, <strong>how would its smell change?</strong> And could you see that change?</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>How it works</h2>
+        <ul class="pp-list">
+          <li><strong>Synthetic Agent:</strong> runs one batched Claude web search for real structure–odor research to ground the predictions, and falls back to a second Pyrfume dataset if search is unavailable.</li>
+          <li><strong>Augmentation Agent:</strong> infers each molecule's likely chemical class from its descriptors and proposes one structural change, like adding a double bond.</li>
+          <li><strong>Evaluator Agent:</strong> predicts the full odor profile of the modified molecule.</li>
+          <li><strong>Supervisor Agent:</strong> a circuit breaker that caps the run at 30 API calls, so cost never runs away.</li>
+          <li><strong>Visual Agent:</strong> draws every molecule as a <strong>Scent Neural Map</strong>, where gold nodes are notes the molecule kept and magenta nodes are new ones.</li>
+        </ul>
+        <figure class="pp-figure">
+          <img src="../images/scent_grid.jpg" alt="Scent Neural Maps comparing two original molecules with their AI-augmented versions" loading="lazy" />
+          <figcaption>Two molecules from one run. An onion–garlic molecule, modified into a likely organosulfur compound, picks up sulfurous, pungent, and metallic notes. A caramel-like ketone gains buttery, sweet, maple, and nutty ones.</figcaption>
+        </figure>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>The presentation</h2>
+        <p>Scent to Art <strong>won prizes</strong> at the Bowdoin–Bates–Colby Hackathon, and I presented it to about <strong>100 people</strong>, including the <strong>president of Bowdoin College</strong>.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>What's next</h2>
+        <p>The agents' predictions are hypotheses, not lab measurements. The natural next step is to test them against real molecules with known structures, which connects directly to my digital olfaction research.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>See the code</h2>
+        <div class="pp-cta">
+          <a href="https://github.com/krobin2005/myportfolio/blob/main/scent-to-art/scentToArt.py" class="btn btn-primary" target="_blank" rel="noopener">View scentToArt.py &nearr;</a>
+        </div>
+      </section>
+
+      <a href="olfaction.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>Digital Olfaction Agent</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
