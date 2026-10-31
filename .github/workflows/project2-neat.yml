@@ -1,0 +1,35 @@
+# Runs the Project II NEAT experiment on every push that touches it.
+# Lives at the repo root in .github/workflows/ (GitHub only reads workflows there).
+name: Project II - NEAT on XOR
+
+on:
+  push:
+    paths:
+      - "dcs340/project2-neuroevolution/**"
+      - ".github/workflows/project2-neat.yml"
+  workflow_dispatch:
+
+jobs:
+  run-neat:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dcs340/project2-neuroevolution
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Evolve a network that solves XOR
+        run: python xor_neat.py
+
+      - name: Save the fitness plot
+        uses: actions/upload-artifact@v4
+        with:
+          name: xor-fitness-plot
+          path: dcs340/project2-neuroevolution/results/xor_fitness.png
