@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+.DS_Store
+results/*.pkl
+neat-checkpoint-*
+FACILITATOR_KEY.md
