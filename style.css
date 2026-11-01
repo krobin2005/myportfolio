@@ -140,6 +140,11 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .project p { color: var(--muted); }
 .stack { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .stack li { font-size: .8rem; padding: 4px 12px; background: var(--surface-2); border-radius: 999px; }
+/* Featured projects span the full row, image beside text */
+a.project.project-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.15fr 1fr; }
+.project-featured .project-img { height: 100%; border-bottom: 0; border-right: 1px solid var(--border); }
+.project-featured .project-body { display: flex; flex-direction: column; justify-content: center; padding: 32px; }
+.project-featured h3 { font-size: 1.9rem; }
 
 /* ---------- Learning log ---------- */
 .section-lead { margin: -16px 0 40px; }
@@ -273,6 +278,9 @@ a.project:hover .project-more { transform: translateX(4px); }
   main { padding: 0 16px; }
   .section { padding: 64px 0; }
   .about-grid, .project-grid, .skill-grid { grid-template-columns: 1fr; }
+  a.project.project-featured { grid-template-columns: 1fr; }
+  .project-featured .project-img { height: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+  .project-featured .project-body { padding: 24px; }
   .learn, .learn-with-img { grid-template-columns: 1fr; gap: 8px; padding: 22px; }
   .learn-num { font-size: 1.4rem; }
   .pp-meta { grid-template-columns: 1fr; }

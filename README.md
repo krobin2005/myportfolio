@@ -2,16 +2,17 @@
 
 **Live site:** https://krobin2005.github.io/myportfolio/
 
-My personal portfolio, built for **DCS340** at Bates College. I'm a Digital & Computational Sciences and Psychology double major, the lead of AI research in Professor Jason Castro's neuroscience lab, and an NCAA Division I alpine skier.
+My personal portfolio, built for **DCS340** at Bates College. I'm a Digital & Computational Studies major (Psychology planned as a second major), the founder of Strayline, the Lead of AI Research on AI for Smell in Professor Jason Castro's lab, and an NCAA Division I alpine skier.
 
 The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitHub Pages. It has no frameworks and no build step.
 
 ## What's on the site
 
 - **About:** who I am and what pulls me between computing and the mind
-- **Experience:** AI research, the Bates Investment Club, and the BMA solar energy proposal
-- **Projects:** Scent to Art (a prize-winning hackathon project), the Digital Olfaction Agent, DNA transcription and translation, the BMA Solar Feasibility Study, industrial equity pitches, and this site. Each one opens its own page.
-- **Learning Log:** my work from the DCS340 optimization module, with links to the Colab notebooks and code
+- **Experience:** Strayline, AI research in the Castro Lab, the Bates Investment Club, and the BMA solar energy proposal
+- **Projects:** two featured projects, **Strayline** (an AI detector for unseen network attacks) and **AI for Smell** (a software-run research lab that predicts odor from molecular structure), plus Scent to Art (a prize-winning hackathon project), Growing Neural Networks with Evolution (NEAT, DCS340 Project II), DNA transcription and translation, the BMA Solar Feasibility Study, equity pitches, and this site. Each one opens its own page.
+- **Learning Log:** my DCS340 work, from the optimization module to Project II (NEAT), with links to the Colab notebooks and code
+- **Resume:** a public copy of my resume (`Kyle_Robin_Resume.pdf`)
 - **Athletics:** D1 skiing at Bates and international FIS racing
 - **Skills and contact**
 
@@ -28,6 +29,10 @@ The `dcs340/` folder holds my explorations from *Introduction to Classical Metho
 
 The Python files were exported from Google Colab. Each one lists its original notebook link at the top.
 
+## DCS340 Project II: NEAT
+
+`dcs340/project2-neuroevolution/` holds my Project II work on NEAT (Stanley & Miikkulainen, 2002): gradient descent vs. NEAT on handwritten 7s and pole balancing, plus the class activity. The full project now lives in its own repo: **[krobin2005/neat-neuroevolution](https://github.com/krobin2005/neat-neuroevolution)**. The workflow in `.github/workflows/project2-neat.yml` runs the NEAT experiment on every push to that folder.
+
 ## Repo structure
 
 ```
@@ -39,7 +44,8 @@ myportfolio/
 ├── images/        # photos used on the site
 ├── scent-to-art/  # Bowdoin–Bates–Colby Hackathon project
 ├── dcs109/        # DNA transcription & translation final project
-└── dcs340/        # optimization module code and notebooks
+├── dcs340/        # optimization module and Project II (NEAT) code and notebooks
+└── .github/       # GitHub Actions workflow for Project II
 ```
 
 ## Running it locally

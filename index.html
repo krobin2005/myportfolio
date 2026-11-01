@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kyle Robin | Portfolio</title>
-  <meta name="description" content="Kyle Robin: Digital & Computational Sciences and Psychology student at Bates College, AI research lead, and NCAA Division I skier." />
+  <meta name="description" content="Kyle Robin: Digital & Computational Studies student at Bates College, founder of Strayline, Lead of AI Research on AI for Smell, and NCAA Division I skier." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -48,8 +48,9 @@
         <p class="eyebrow reveal">Hi, I'm Kyle</p>
         <h1 class="reveal">Computing<br><span class="accent">&amp; the Mind</span></h1>
         <p class="lead reveal">
-          I'm a Digital &amp; Computational Sciences and Psychology double major at Bates College.
-          I build AI tools for neuroscience research, analyze markets, and ski race at the NCAA Division I level.
+          I'm a Digital &amp; Computational Studies major (with Psychology as a planned second major) at Bates College.
+          I founded Strayline, an AI detector for network attacks nobody has seen before, lead AI research on
+          AI for Smell, and ski race at the NCAA Division I level.
         </p>
         <div class="hero-actions reveal">
           <a href="#projects" class="btn btn-primary">See my work</a>
@@ -64,7 +65,7 @@
           </div>
           <div class="stat">
             <span class="stat-num">2</span>
-            <span class="stat-label">Majors: DCS &amp; Psychology</span>
+            <span class="stat-label">Majors: DCS &amp; Psychology (planned)</span>
           </div>
           <div class="stat">
             <span class="stat-num">5</span>
@@ -84,9 +85,10 @@
           interprets a smell, is what pulled me toward computer science and psychology.
         </p>
         <p class="reveal">
-          At Bates, I lead AI research in Professor Jason Castro's neuroscience lab, where we use
-          LLMs to map the sense of smell. I like problems that sit between fields: code and
-          cognition, data and decisions.
+          At Bates, I lead AI research in Professor Jason Castro's neuroscience lab, where I'm building
+          AI for Smell, a software-run lab that predicts how molecules smell. I also founded Strayline,
+          because I want to spend my career defending networks. I like problems that sit between fields:
+          code and cognition, data and security.
         </p>
       </div>
     </section>
@@ -98,26 +100,40 @@
 
         <article class="job reveal">
           <div class="job-head">
-            <h3>Research Assistant, Lead of AI Research</h3>
-            <span class="job-date">Sep 2026 – Present</span>
+            <h3>Founder</h3>
+            <span class="job-date">Oct 2026 – Present</span>
           </div>
-          <p class="job-org">Bates College · Neuroscience Lab (Prof. Jason Castro)</p>
+          <p class="job-org">Strayline · AI network-attack detection</p>
           <p>
-            Leading development of AI agent interfaces to map and objectify the biological sense of smell,
-            bridging human psychophysics and mouse neural networks. Building Python LLM workflows with the
-            Claude API and custom hooks to query large olfactory databases like Pyrfume efficiently.
+            Designed a hybrid intrusion detector that pairs a classifier for known attack families with an
+            autoencoder trained only on normal traffic, plus an evaluation that maps which unseen attacks are
+            caught at a 1% false-alarm rate. Submitted to the AAAI-27 Undergraduate Consortium.
           </p>
         </article>
 
         <article class="job reveal">
           <div class="job-head">
-            <h3>Industrial Sector Analyst</h3>
+            <h3>Research Assistant, Lead of AI Research</h3>
+            <span class="job-date">Sep 2026 – Present</span>
+          </div>
+          <p class="job-org">Bates College · Castro Lab (Prof. Jason Castro)</p>
+          <p>
+            Leading design and development of AI for Smell: a six-agent research lab in Python that trains
+            neural networks to predict odor from molecular structure (5,858 molecules), with a Skeptic agent
+            that tests every claimed gain, memory across runs, and evolutionary search. Working toward a
+            co-authored paper.
+          </p>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-head">
+            <h3>Technology Sector Analyst</h3>
             <span class="job-date">Aug 2025 – Present</span>
           </div>
           <p class="job-org">Bates Investment Club</p>
           <p>
-            Conduct equity research on industrial companies using DCF, comparable-company, and
-            fundamental analysis, then turn that work into stock pitches with my team.
+            Research technology companies (previously the industrial sector) using DCF, comparable-company,
+            and fundamental analysis, then turn that work into stock pitches for the club.
           </p>
         </article>
 
@@ -141,6 +157,36 @@
       <h2 class="section-title reveal">Projects</h2>
       <div class="project-grid">
 
+        <a class="project project-featured reveal" href="projects/strayline.html">
+          <img src="images/strayline.jpg" alt="Network traffic following a normal line, with a few red points straying far from it" class="project-img" loading="lazy" />
+          <div class="project-body">
+            <span class="tag">Featured · Cybersecurity · Founder</span>
+            <h3>Strayline</h3>
+            <p>
+              My venture: a hybrid AI detector that catches network attacks nobody has seen before. A classifier
+              learns known attacks, an autoencoder learns normal traffic, and a "catchability map" shows defenders
+              which unseen attacks it can and can't catch. Submitted to the AAAI-27 Undergraduate Consortium.
+            </p>
+            <ul class="stack"><li>Python</li><li>PyTorch</li><li>Network security</li></ul>
+            <span class="project-more">View project &rarr;</span>
+          </div>
+        </a>
+
+        <a class="project project-featured reveal" href="projects/olfaction.html">
+          <img src="images/olfaction.jpg" alt="3D model of a molecular structure" class="project-img" loading="lazy" />
+          <div class="project-body">
+            <span class="tag">Featured · AI · Neuroscience</span>
+            <h3>AI for Smell</h3>
+            <p>
+              A research lab run by software in Professor Jason Castro's lab: six AI agents train neural networks
+              to predict how molecules smell, get better with every run, and a Skeptic agent keeps false
+              discoveries out. Working toward a co-authored paper this semester.
+            </p>
+            <ul class="stack"><li>Python</li><li>PyTorch</li><li>RDKit</li><li>Pyrfume</li></ul>
+            <span class="project-more">View project &rarr;</span>
+          </div>
+        </a>
+
         <a class="project reveal" href="projects/scent.html">
           <img src="images/scent.jpg" alt="A Scent Neural Map: a glowing radial diagram of odor descriptors" class="project-img" loading="lazy" />
           <div class="project-body">
@@ -155,17 +201,16 @@
           </div>
         </a>
 
-        <a class="project reveal" href="projects/olfaction.html">
-          <img src="images/olfaction.jpg" alt="3D model of a molecular structure" class="project-img" loading="lazy" />
+        <a class="project reveal" href="projects/neat.html">
+          <img src="images/neat.jpg" alt="Three neural networks showing NEAT growing from no hidden neurons to two" class="project-img" loading="lazy" />
           <div class="project-body">
-            <span class="tag">AI · Neuroscience</span>
-            <h3>Digital Olfaction Agent</h3>
+            <span class="tag">Neural networks · DCS340</span>
+            <h3>Growing Neural Networks with Evolution</h3>
             <p>
-              LLM-powered agent that queries external olfactory datasets to connect how humans
-              perceive smells with how mouse neural networks encode them. Working toward a
-              co-authored publication this semester.
+              Learned NEAT, tested it against gradient descent on handwritten 7s and pole balancing, and taught it
+              to my Evolutionary Computing class with a hands-on "break NEAT" activity.
             </p>
-            <ul class="stack"><li>Python</li><li>Claude API</li><li>Pyrfume</li></ul>
+            <ul class="stack"><li>Python</li><li>neat-python</li><li>Colab</li></ul>
             <span class="project-more">View project &rarr;</span>
           </div>
         </a>
@@ -308,6 +353,7 @@
             <div class="learn-links">
               <a href="https://drive.google.com/drive/folders/1dByDDjGweoe4XN2JgvP6EBS0tSClyiiS" target="_blank" rel="noopener">Open the Colab notebooks &nearr;</a>
               <a href="https://github.com/krobin2005/neat-neuroevolution" target="_blank" rel="noopener">View code &nearr;</a>
+              <a href="projects/neat.html">Project page &rarr;</a>
             </div>
           </div>
         </article>
@@ -346,19 +392,19 @@
     <section id="skills" class="section">
       <h2 class="section-title reveal">Skills &amp; <span class="muted">tools</span></h2>
       <div class="skill-grid">
-        <div class="skill reveal"><h3>Programming</h3><p>Python, R, Data Structures &amp; Algorithms</p></div>
-        <div class="skill reveal"><h3>Data &amp; AI</h3><p>Data science, LLM workflows, prompting with Claude, ChatGPT, Gemini, Codex, and Copilot</p></div>
+        <div class="skill reveal"><h3>Programming</h3><p>Python (pandas, NumPy, PyTorch, scikit-learn, RDKit, Matplotlib), R, HTML/CSS/JavaScript, Git and GitHub</p></div>
+        <div class="skill reveal"><h3>Data &amp; AI</h3><p>Neural networks, evolutionary computing (NEAT), multi-agent pipelines with the Claude API, LLM prompting and evaluation</p></div>
         <div class="skill reveal"><h3>Finance</h3><p>Financial accounting, DCF, comparable-company analysis</p></div>
         <div class="skill reveal"><h3>Tools</h3><p>Excel, Word, PowerPoint</p></div>
         <div class="skill reveal"><h3>Certification</h3><p>Anthropic AI Fluency</p></div>
-        <div class="skill reveal"><h3>Coursework</h3><p>CS Foundations, Data Structures, Data Science, Neuroscience, Psychology</p></div>
+        <div class="skill reveal"><h3>Coursework</h3><p>Software Development (Python), Data Structures &amp; Algorithms, Evolutionary Computing, Principles of Psychology; Cybersecurity Principles at Northeastern's Roux Institute (spring 2027)</p></div>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section contact">
       <h2 class="section-title reveal">Let's <span class="accent">talk</span></h2>
-      <p class="lead reveal">Open to research collaborations, internships, and conversations about AI, the brain, or skiing.</p>
+      <p class="lead reveal">Open to research collaborations, internships, and conversations about AI, cybersecurity, the brain, or skiing.</p>
       <a class="contact-email reveal" href="mailto:krobin@bates.edu">krobin@bates.edu</a>
     </section>
 
