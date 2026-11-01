@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strayline | Kyle Robin</title>
+  <meta name="description" content="Strayline: a hybrid AI detector for network attacks nobody has seen before, founded by Kyle Robin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">Cybersecurity · AI · Founder</span>
+      <h1 class="reveal">Strayline</h1>
+      <p class="lead reveal">A hybrid AI detector built to catch the network attacks nobody has seen before, and to show defenders exactly where it can and can't be trusted.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Founder</div>
+        <div><span>When</span>Oct 2026 – Present</div>
+        <div><span>Tools</span>Python, PyTorch, CIC-IDS2017, UNSW-NB15</div>
+      </div>
+
+      <img src="../images/strayline.jpg" alt="Network traffic following a normal line, with a few red points straying far from it" class="pp-hero-img reveal" />
+
+      <section class="pp-section reveal">
+        <h2>The problem</h2>
+        <p>The cyberattack that hurts you most is the one nobody has seen before. Most AI security tools only recognize attacks they were trained on, and attackers now use AI to create new variants faster than defenders can label them. Analysts end up choosing between tools that <strong>miss new attacks</strong> and tools that <strong>bury them in false alarms</strong>, and detectors that look great in the lab often fail on real networks.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>How it works</h2>
+        <p>Strayline catches network traffic that strays from the normal line. It pairs two neural networks:</p>
+        <ul class="pp-list">
+          <li><strong>A classifier</strong> that learns the attack families we already know about.</li>
+          <li><strong>An autoencoder</strong> trained only on normal traffic, so anything it can't reconstruct well gets flagged as unusual.</li>
+          <li><strong>A hybrid rule:</strong> when the classifier isn't sure, the autoencoder gives a second opinion. Alert thresholds are set on normal traffic only, so the detector never sees the attack it's tested on.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>The catchability map</h2>
+        <p>The part I'm most excited about: I hide an <strong>entire attack family</strong> during training (DoS, port scans, brute-force logins, web attacks, botnets and more), then test whether the system still catches it. Repeating that for every family at a fixed <strong>1% false-alarm rate</strong> produces a map of which unseen attacks are easy or hard to catch, and why. That tells security teams where they can trust the tool and where they still need a human.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>Where it stands</h2>
+        <ul class="pp-list">
+          <li>Designed the full system and its evaluation plan.</li>
+          <li>Submitted it as a research proposal to the <strong>AAAI-27 Undergraduate Consortium</strong>.</li>
+          <li>Applied to pitch Strayline at <strong>The Eleven Society's Northeast Entrepreneurship Summit</strong> (Boston, Nov 2026).</li>
+          <li>Next: build it on public attack datasets and publish the map.</li>
+        </ul>
+      </section>
+
+      <a href="olfaction.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>AI for Smell</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

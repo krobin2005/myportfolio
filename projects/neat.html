@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEAT: Growing Neural Networks with Evolution | Kyle Robin</title>
+  <meta name="description" content="DCS340 Project II: learning and teaching NEAT, and testing it against gradient descent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="pp">
+      <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+
+      <span class="tag reveal">Neural networks · DCS340 Project II</span>
+      <h1 class="reveal">Growing Neural Networks with Evolution</h1>
+      <p class="lead reveal">I learned NEAT (Stanley &amp; Miikkulainen, 2002), tested it head-to-head against gradient descent, and taught it to my Evolutionary Computing class with a hands-on activity.</p>
+
+      <div class="pp-meta reveal">
+        <div><span>Role</span>Researcher &amp; presenter</div>
+        <div><span>When</span>Oct – Nov 2026</div>
+        <div><span>Tools</span>Python, neat-python, NumPy, Colab, GitHub Actions</div>
+      </div>
+
+      <img src="../images/neat.jpg" alt="Three neural networks showing NEAT growing from no hidden neurons to two" class="pp-hero-img reveal" />
+
+      <section class="pp-section reveal">
+        <h2>The idea</h2>
+        <p>Gradient descent trains a network whose shape <strong>you</strong> pick, and it needs the correct answer for every example. NEAT evolves both the weights <strong>and the shape</strong>, starting from networks with no hidden neurons at all, and it only needs a score.</p>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>What I found</h2>
+        <ul class="pp-list">
+          <li><strong>Is it a 7?</strong> On real handwritten digits, gradient descent scored 97.6% and NEAT 95.0%, but NEAT did it with no hidden neurons and 44 parameters, vs. 529 for gradient descent.</li>
+          <li><strong>Balancing a pole:</strong> there's no correct push for each moment, only a score, so gradient descent can't start. NEAT balanced it for 500 steps (the max) vs. about 20 for random pushing.</li>
+          <li><strong>Luck matters:</strong> rerunning the same NEAT setup with different random seeds gave anywhere from 74% to 88%, a reminder that one run isn't proof.</li>
+        </ul>
+      </section>
+
+      <section class="pp-section reveal">
+        <h2>Teaching it</h2>
+        <p>For the class activity, pairs watch NEAT grow a network, then each pair <strong>breaks one part of NEAT on purpose</strong> (no new neurons, no species, a tiny population and more), predicts what will happen, and runs it. It's a small version of the paper's own ablation study.</p>
+        <div class="pp-cta">
+          <a href="https://github.com/krobin2005/neat-neuroevolution" class="btn btn-primary" target="_blank" rel="noopener">View the repo &nearr;</a>
+          <a href="https://drive.google.com/drive/folders/1dByDDjGweoe4XN2JgvP6EBS0tSClyiiS" class="btn btn-ghost" target="_blank" rel="noopener">Open the Colab notebooks &nearr;</a>
+        </div>
+      </section>
+
+      <a href="dna.html" class="pp-next reveal">
+        <div><span>Next project</span><strong>DNA Transcription &amp; Translation</strong></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

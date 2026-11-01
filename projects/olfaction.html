@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Olfaction Agent | Kyle Robin</title>
-  <meta name="description" content="Building LLM agents to map the biological sense of smell in Professor Jason Castro's lab at Bates College." />
+  <title>AI for Smell | Kyle Robin</title>
+  <meta name="description" content="AI for Smell: a software-run research lab that predicts odor from molecular structure, in Professor Jason Castro's lab at Bates College." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -33,44 +33,41 @@
     <article class="pp">
       <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
 
-      <span class="tag reveal">AI · Neuroscience</span>
-      <h1 class="reveal">Digital Olfaction Agent</h1>
-      <p class="lead reveal">Using AI agents to help map and measure the sense of smell, connecting how people perceive odors with how mouse neural networks encode them.</p>
+      <span class="tag reveal">AI · Neuroscience · Research</span>
+      <h1 class="reveal">AI for Smell</h1>
+      <p class="lead reveal">A research lab run by software: AI agents that train neural networks to predict how molecules smell, get better with every run, and refuse to accept discoveries that don't hold up.</p>
 
       <div class="pp-meta reveal">
         <div><span>Role</span>Lead of AI Research</div>
         <div><span>When</span>Sep 2026 – Present</div>
-        <div><span>Tools</span>Python, Claude API, Pyrfume</div>
+        <div><span>Tools</span>Python, PyTorch, scikit-learn, RDKit, Pyrfume</div>
       </div>
 
       <img src="../images/olfaction.jpg" alt="3D model of a molecular structure" class="pp-hero-img reveal" />
 
       <section class="pp-section reveal">
         <h2>The question</h2>
-        <p>Vision and hearing have well-established ways to measure what we sense, like wavelength and frequency. Smell doesn't have an equivalent. Professor Jason Castro's lab studies how to <strong>map and objectify</strong> the sense of smell by bridging two kinds of data: <strong>human psychophysics</strong> (how people describe and rate odors) and <strong>mouse neural networks</strong> (how the olfactory system encodes them).</p>
+        <p>Vision and hearing have well-established ways to measure what we sense, like wavelength and frequency. Smell doesn't have an equivalent. In Professor Jason Castro's lab at Bates, we're asking whether a neural network can learn to predict how a molecule smells (sweet, woody, fruity and so on) <strong>from its structure alone</strong>.</p>
       </section>
 
       <section class="pp-section reveal">
-        <h2>What I'm doing</h2>
+        <h2>What I'm building</h2>
         <ul class="pp-list">
-          <li>Leading development of AI agent interfaces that help the lab explore large olfactory datasets.</li>
-          <li>Engineering Python-based LLM workflows with the <strong>Claude API</strong> and custom hook functions.</li>
-          <li>Optimizing token usage so agents can securely and efficiently query large external databases like <strong>Pyrfume</strong>, an open collection of olfactory datasets.</li>
-          <li>Collaborating across the lab to analyze machine learning outputs.</li>
+          <li>A <strong>six-agent research lab in Python</strong> that proposes ideas, trains neural networks on <strong>5,858 molecules</strong>, and tests the results.</li>
+          <li>A <strong>Skeptic agent</strong> that checks every claimed improvement with scaffold splits, shuffled-label controls and corrected confidence intervals, so lucky results don't count as discoveries.</li>
+          <li><strong>Memory</strong> across runs, so the lab builds on what it already learned.</li>
+          <li><strong>Evolutionary search</strong>, where network designs breed and the best survive, bringing in what I'm learning in Evolutionary Computing.</li>
+          <li>A benchmark against the graph neural network approach of Lee et al. (<em>Science</em>, 2023).</li>
         </ul>
       </section>
 
       <section class="pp-section reveal">
         <h2>Where it's headed</h2>
-        <p>We're working toward a <strong>co-authored publication in digital olfaction</strong> by the end of the semester.</p>
-        <a href="scent.html" class="pp-next pp-related">
-          <div><span>Related: my hackathon project</span><strong>Scent to Art</strong></div>
-          <div class="arrow">&rarr;</div>
-        </a>
+        <p>The paper is less about building the single best smell model and more about a lab that <strong>gets better at finding models with every run</strong>, while the Skeptic keeps false discoveries out. We're working toward a <strong>co-authored publication</strong> by the end of the fall 2026 semester.</p>
       </section>
 
-      <a href="dna.html" class="pp-next reveal">
-        <div><span>Next project</span><strong>DNA Transcription & Translation</strong></div>
+      <a href="scent.html" class="pp-next reveal">
+        <div><span>Related: my hackathon project</span><strong>Scent to Art</strong></div>
         <div class="arrow">&rarr;</div>
       </a>
     </article>
