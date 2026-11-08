@@ -7,7 +7,7 @@
   <meta name="description" content="Strayline: a hybrid AI detector for network attacks nobody has seen before, founded by Kyle Robin." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -68,10 +68,11 @@
       <section class="pp-section reveal">
         <h2>Where it stands</h2>
         <ul class="pp-list">
-          <li>Designed the full system and its evaluation plan.</li>
+          <li>Built the detector in PyTorch and ran the leave-one-family-out test on CIC-IDS2017: at a 1% false-alarm rate it catches 87% of never-seen infiltration traffic.</li>
+          <li>Added three Claude agents (triage, an investigator using an MCP tool server, and a literature researcher): 49,387 alerts became 414 incidents and 55 escalations, with all 8 real attack incidents escalated, including a never-seen port scan.</li>
           <li>Submitted it as a research proposal to the <strong>AAAI-27 Undergraduate Consortium</strong>.</li>
-          <li>Applied to pitch Strayline at <strong>The Eleven Society's Northeast Entrepreneurship Summit</strong> (Boston, Nov 2026).</li>
-          <li>Next: build it on public attack datasets and publish the map.</li>
+          <li>Selected as <strong>Bates College's runner-up</strong> for The Eleven Society's Northeast Entrepreneurship Summit (Boston, Nov 15, 2026).</li>
+          <li>Next: extend the catchability map to UNSW-NB15 and publish it.</li>
         </ul>
       </section>
 
