@@ -2,7 +2,7 @@
 
 **Live site:** https://krobin2005.github.io/myportfolio/
 
-My personal portfolio, built for **DCS340** at Bates College. I'm a Digital & Computational Studies major (Psychology planned as a second major), the founder of Strayline, the Lead of AI Research on AI for Smell in Professor Jason Castro's lab, and an NCAA Division I alpine skier.
+My personal portfolio, built for **DCS340** at Bates College. I'm a Digital & Computational Studies major (Psychology planned as a second major), the founder of Strayline, the Lead of AI and Machine Learning Research on AI for Smell in Professor Jason Castro's lab, and an NCAA Division I alpine skier.
 
 The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitHub Pages. It has no frameworks and no build step.
 
@@ -10,7 +10,7 @@ The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitH
 
 - **About:** who I am and what pulls me between computing and the mind
 - **Experience:** Strayline, AI research in the Castro Lab, the Bates Investment Club, and the BMA solar energy proposal
-- **Projects:** two featured projects, **Strayline** (an AI detector for unseen network attacks) and **AI for Smell** (a software-run research lab that predicts odor from molecular structure), plus Scent to Art (a prize-winning hackathon project), Growing Neural Networks with Evolution (NEAT, DCS340 Project II), DNA transcription and translation, the BMA Solar Feasibility Study, equity pitches, and this site. Each one opens its own page.
+- **Projects:** two featured projects, **Strayline** (an AI detector for unseen network attacks) and **AI for Smell** (a software-run research lab that predicts odor from molecular structure), plus Scent to Art (a prize-winning hackathon project), Growing Neural Networks with Evolution (NEAT, DCS340 Project II), DNA transcription and translation, and this site. Each one opens its own page.
 - **Learning Log:** my DCS340 work, from the optimization module to Project II (NEAT), with links to the Colab notebooks and code
 - **Resume:** a public copy of my resume (`Kyle_Robin_Resume.pdf`)
 - **Athletics:** D1 skiing at Bates and international FIS racing
