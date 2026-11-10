@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ski Racing-Line Optimizer | Kyle Robin</title>
+  <meta name="description" content="DCS340 Project III: using evolution to find a faster line down a real World Cup Giant Slalom course." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="../index.html" class="nav-logo">KR</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#learning">Learning</a>
+      <a href="../index.html#athletics">Athletics</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+  <article class="pp">
+    <a href="../index.html#projects" class="pp-back">&larr; All projects</a>
+    <span class="tag reveal">Evolutionary computing · DCS340 Project III</span>
+    <h1 class="reveal">Ski Racing-Line Optimizer <span class="status">In progress</span></h1>
+    <p class="lead reveal">Can evolution find a faster line down a real World Cup Giant Slalom course than the world's best skiers? And can it beat gradient descent on the same problem?</p>
+
+    <div class="pp-meta reveal">
+      <div><span>Role</span>Co-builder with Liam Baron</div>
+      <div><span>When</span>Oct 2026 &ndash; Present</div>
+      <div><span>Tools</span>Python, JAX, evosax</div>
+    </div>
+
+    <img src="../images/racing.jpg" alt="Kyle racing for Bates" class="pp-hero-img reveal" />
+
+    <section class="pp-section reveal">
+      <h2>Why evolution</h2>
+      <p>In GS, a direct line is shorter but forces tight, slow turns, while a rounder line keeps your speed but covers more ground. You also can't miss a gate or crash. That makes for a bumpy problem with lots of rules and lots of local optima, which is where gradient descent tends to get stuck and evolution can do well.</p>
+    </section>
+
+    <section class="pp-section reveal">
+      <h2>How we built it</h2>
+      <p>We built a skier simulator in Python and ran it on the real 3D terrain of the Gran Risa in Alta Badia, Italy, using the same course as the December 2025 men's World Cup GS. Each line is scored like a real race run, including the chance of crashing out. Then CMA-ES, a genetic algorithm we wrote ourselves, a hybrid that starts with CMA-ES and finishes with gradient descent, plain gradient descent and a grid search all tried to find the fastest line with the same amount of computing time.</p>
+    </section>
+
+    <section class="pp-section reveal">
+      <h2>Where it stands</h2>
+      <p>This project is still in progress. So far, CMA-ES has found a line about a second and a half faster than the real winning run, and we made a race video where every algorithm's best line races head to head. Still to come: our reflections and GenAI disclosure, the class show and tell, and our final interviews in December.</p>
+      <p>Liam and I did the whole project together, every session and every prompt.</p>
+      <div class="pp-cta">
+        <a href="https://github.com/krobin2005/ski-racing-line-optimizer" class="btn btn-primary" target="_blank" rel="noopener">View the repo &nearr;</a>
+        <a href="https://github.com/krobin2005/myportfolio/blob/main/dcs340/project3-ski-racing/proposal.md" class="btn btn-ghost" target="_blank" rel="noopener">Read the proposal &nearr;</a>
+      </div>
+    </section>
+
+    <section class="pp-section reveal">
+      <p><em>GenAI disclosure: the text on this page was drafted with Claude, based on our project proposal.</em></p>
+    </section>
+
+    <a href="dna.html" class="pp-next reveal">
+      <div><span>Next project</span><strong>DNA Transcription &amp; Translation</strong></div>
+      <div class="arrow">&rarr;</div>
+    </a>
+  </article>
+</main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kyle Robin · Built by hand for DCS340</p>
+    <a href="../index.html">Back to home &uarr;</a>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
