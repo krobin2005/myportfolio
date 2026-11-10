@@ -10,8 +10,8 @@ The site is hand-coded in HTML, CSS, and vanilla JavaScript and hosted with GitH
 
 - **About:** who I am and what pulls me between computing and the mind
 - **Experience:** Strayline, AI research in the Castro Lab, the Bates Investment Club, and the BMA solar energy proposal
-- **Projects:** two featured projects, **Strayline** (an AI detector for unseen network attacks) and **AI for Smell** (a software-run research lab that predicts odor from molecular structure), plus Scent to Art (a prize-winning hackathon project), Growing Neural Networks with Evolution (NEAT, DCS340 Project II), DNA transcription and translation, and this site. Each one opens its own page.
-- **Learning Log:** my DCS340 work, from the optimization module to Project II (NEAT), with links to the Colab notebooks and code
+- **Projects:** two featured projects, **Strayline** (an AI detector for unseen network attacks, in progress) and **AI for Smell** (a software-run research lab that predicts odor from molecular structure), plus Scent to Art (a prize-winning hackathon project), Growing Neural Networks with Evolution (NEAT, DCS340 Project II), the Ski Racing-Line Optimizer (DCS340 Project III with Liam Baron, in progress), DNA transcription and translation, and this site. Each one opens its own page.
+- **Learning Log:** my DCS340 work, from the optimization module to Project III (the ski racing-line optimizer, in progress), with links to the Colab notebooks and code
 - **Resume:** a public copy of my resume (`Kyle_Robin_Resume.pdf`)
 - **Athletics:** D1 skiing at Bates and international FIS racing
 - **Skills and contact**
@@ -32,6 +32,10 @@ The Python files were exported from Google Colab. Each one lists its original no
 ## DCS340 Project II: NEAT
 
 `dcs340/project2-neuroevolution/` holds my Project II work on NEAT (Stanley & Miikkulainen, 2002): gradient descent vs. NEAT on handwritten 7s and pole balancing, plus the class activity. The full project now lives in its own repo: **[krobin2005/neat-neuroevolution](https://github.com/krobin2005/neat-neuroevolution)**. The workflow in `.github/workflows/project2-neat.yml` runs the NEAT experiment on every push to that folder.
+
+## DCS340 Project III: Ski Racing-Line Optimizer (in progress)
+
+`dcs340/project3-ski-racing/` holds our project proposal. The code lives in its own repo, **[ski-racing-line-optimizer](https://github.com/krobin2005/ski-racing-line-optimizer)**, built with Liam Baron.
 
 ## Repo structure
 
