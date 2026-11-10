@@ -305,3 +305,20 @@ a.project:hover .project-more { transform: translateX(4px); }
   .stat-num { font-size: 1.8rem; }
   .stat-label { font-size: .78rem; }
 }
+
+/* Status badge for projects that are still in progress */
+.status {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fff4dc;
+  color: #8a5a00;
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
